@@ -1,2 +1,2 @@
 # DEN
-The First Internship in the development journey.
+Internship Projects – Digital Empowerment Network
