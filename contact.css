@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.sidenav {
+  width: 100px;
+  height: 100vh;
+  background-color: #333;
+  padding: 15px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: lightgrey;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.sidenav a:hover {
+  background-color: #575757;
+}
+
+.contact-container {
+  margin-left: 120px;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: rgb(133, 9, 9);
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  background: #333;
+  color: #fff;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #bbb;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 120%;
+  color: whitesmoke;
+  background-color: rgb(192, 49, 49);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #3d3826;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #999;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgb(192, 49, 49);
+  font-weight: bold;
+}
+
+footer .social-icons a:hover {
+  color: #e6b800;
+}

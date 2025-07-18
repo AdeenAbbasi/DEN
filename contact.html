@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <nav class="sidenav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <main class="contact-container">
+    <header>
+      <h1>Contact Me</h1>
+      <p>Call for a consultation at <strong>(434) 258-2602</strong> or fill out the form below.</p>
+    </header>
+
+    <section class="form-container">
+      <form id="contactForm" action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2024 A-Graphics</p>
+      <div class="social-icons">
+        <a href="#" title="Visit our Facebook">Facebook</a>
+        <a href="#" title="Visit our LinkedIn">LinkedIn</a>
+        <a href="#" title="Visit our Instagram">Instagram</a>
+      </div>
+    </footer>
+  </main>
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contactForm");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Thank you! Your message has been sent.");
+        form.reset();
+      });
+    });
+  </script>
+</body>
+</html>
