@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services</title>
+  <link rel="stylesheet" href="services.css" />
+</head>
+<body>
+
+  <nav class="sidenav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+ 
+  <main class="servicescontainer">
+    <div class="mycontent">
+
+      <section>
+        <h2>Services</h2>
+        <hr />
+        <p>
+          As a dedicated web developer, I specialize in creating custom websites that are not only visually stunning but also optimized for performance, user experience, and search engines. Whether you're looking to build a brand-new site, revamp your current one, or add advanced functionality, I’m here to turn your vision into reality. Let’s collaborate to create a digital platform that truly represents your business and drives measurable results. Your success starts with a website—let’s build it together!
+        </p>
+      </section>
+
+      <section>
+        <h2>What I Offer</h2>
+        <hr />
+        <ul>
+          <li><strong>Custom Website Development:</strong> Tailored designs that meet your business needs.</li>
+          <li><strong>Responsive Design:</strong> Mobile-first and user-friendly interfaces for all devices.</li>
+          <li><strong>SEO Optimization:</strong> Ensure your website ranks well on search engines.</li>
+          <li><strong>E-Commerce Solutions:</strong> Build an online store with secure payment gateways.</li>
+          <li><strong>Maintenance And Support:</strong> Ongoing updates and technical assistance.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Why Choose Me?</h2>
+        <hr />
+        <p>
+          I believe in creating meaningful digital experiences that leave a lasting impact. Here’s why clients trust me:
+        </p>
+        <ul>
+          <li>Focus on quality and attention to detail.</li>
+          <li>Collaborative approach to understand your vision.</li>
+          <li>Proven track record of successful projects.</li>
+          <li>Timely delivery and transparent communication.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Get Started Today!</h2>
+        <hr />
+        <p>
+          Ready to bring your ideas to life? Contact me to discuss your project and take the first step toward creating a remarkable online presence.
+        </p>
+        <a href="contact.html" class="contact-button">Contact Me</a>
+      </section>
+
+    </div>
+  </main>
+
+<button onclick="scrollToTop()" id="topBtn" title="Go to top">↑</button>
+<button onclick="scrollToBottom()" id="bottomBtn" title="Go to bottom">↓</button>
+<script>
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function scrollToBottom() {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  }
+
+  window.onscroll = function () {
+    const topBtn = document.getElementById("topBtn");
+    const bottomBtn = document.getElementById("bottomBtn");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      topBtn.style.display = "block";
+      bottomBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+      bottomBtn.style.display = "block";
+    }
+  };
+</script>
+
+</body>
+</html>
